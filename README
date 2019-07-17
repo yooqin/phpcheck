@@ -66,6 +66,10 @@ set foldmethod=indent
 " 启动 vim 时关闭折叠代码
 set nofoldenable
 
+" 行末空行显示黑块
+set listchars=tab:»■,trail:■
+set list
+
 
 " phpdocument配置
 au BufRead,BufNewFile *.php inoremap <buffer> <C-P> :call PhpDoc()<CR>
@@ -79,3 +83,5 @@ let g:pdv_cfg_Version = '1.0'
 let g:pdv_cfg_Date = strftime("%Y-%m-%d %H:%M:%S")
 
 let g:pdv_cfg_ClassTags = ["author", "date", "copyright", "version"]
+
+source ~/.vim/bundle/phpcheck/phpcheck.vim
