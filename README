@@ -70,6 +70,10 @@ set nofoldenable
 set listchars=tab:»■,trail:■
 set list
 
+set nocompatible
+set backspace=indent,eol,start
+"set autoread
+
 
 " phpdocument配置
 au BufRead,BufNewFile *.php inoremap <buffer> <C-P> :call PhpDoc()<CR>
@@ -77,11 +81,11 @@ au BufRead,BufNewFile *.php nnoremap <buffer> <C-P> :call PhpDoc()<CR>
 au BufRead,BufNewFile *.php vnoremap <buffer> <C-P> :call PhpDocRange()<CR>
 
 let g:pdv_cfg_Package = 'YourPackage'
-let g:pdv_cfg_Author = 'qinwei <yooqin@gmail.com>'
-let g:pdv_cfg_Copyright = 'yooqin.com'
+let g:pdv_cfg_Author = 'qinwei <qinwei3@100tal.com>'
+let g:pdv_cfg_Copyright = '北京学而思网络科技有限公司'
 let g:pdv_cfg_Version = '1.0'
 let g:pdv_cfg_Date = strftime("%Y-%m-%d %H:%M:%S")
 
 let g:pdv_cfg_ClassTags = ["author", "date", "copyright", "version"]
 
-source ~/.vim/bundle/phpcheck/phpcheck.vim
+"source ~/.vim/bundle/phpcheck/phpcheck.vim
